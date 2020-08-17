@@ -1,0 +1,87 @@
+.header,
+.footer {
+    padding: 2rem;
+    background-color: $defaultFont;
+    background-color: $defaultFontRGBA;
+    border: 5px solid $defaultFont;
+    text-align: center;
+}
+
+.header {
+    h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        color: #fff;
+        display: inline-block;
+
+        .logo {
+            height: 40px;
+            margin-right: 0.5rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &__nav {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1rem;
+        margin: 1rem 0 0 0;
+
+        @media (min-width: 480px) {
+            margin: 0.75rem 0 0.45rem 2rem;
+        }
+    }
+
+    &__links {
+        color: $subtleBg;
+        margin: 1rem;
+        font-style: italic;
+        font-weight: 700;   
+        border-bottom: 1px solid $subtleBg;     
+    }
+}
+
+.footer {
+    .logo--rd > svg {
+        width: 200px;
+
+        &:hover {
+            fill: $subtleBg;
+            transition: fill 0.25s ease-in-out;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        max-width: 500px;
+        margin: 0 auto;
+
+        > svg:hover {
+            color: $spicy;
+            fill: $spicy;
+
+            transition: all 0.2s ease-out;
+        }
+    }
+
+    &__link {
+        width: 100%;
+        color: $subtleBg;
+        margin: 1rem;
+        
+    }
+
+    &__legal {
+        color: #fff;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 1rem;
+    }
+}
