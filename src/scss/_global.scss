@@ -18,7 +18,7 @@ body {
     background-image: url('images/hex.svg');
     background-size: 40px;
     background-repeat: repeat;
-    background-color: $primary;
+    background-color: $subtleBlue;
     color: $defaultFont;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -32,7 +32,7 @@ a {
     transition: all 0.2s linear;
     text-decoration: none;
     font-weight: 700;
-    color: $defaultFont;
+    color: $subtleBg;
 
     &:hover {
         color: $spicy;
@@ -89,6 +89,14 @@ h2 {
 
     img {
         max-width: 200px;
+    }
+
+    a {
+        color: $spicy;
+    
+        &:hover {
+            color: $defaultFont;
+        }
     }
 }
 

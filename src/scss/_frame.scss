@@ -42,8 +42,7 @@
         color: $subtleBg;
         margin: 1rem;
         font-style: italic;
-        font-weight: 700;   
-        border-bottom: 1px solid $subtleBg;     
+        font-weight: 700;    
     }
 }
 
@@ -56,7 +55,7 @@
         }
 
         &:hover {
-            fill: $subtleBg;
+            fill: $spicy;
             transition: fill 0.25s ease-in-out;
         }
     }
@@ -78,14 +77,18 @@
     &__link {
         width: 100%;
         color: $subtleBg;
-        margin: 0.5rem;
-        
+        margin: 0 1rem;
+
+        &:hover {
+            color: $spicy;
+            transition: fill 0.25s ease-in-out;
+        }
     }
 
     &__legal {
         color: #fff;
         font-size: 0.9rem;
         text-align: center;
-        padding: 1rem;
+        margin-top: 2rem;
     }
 }
