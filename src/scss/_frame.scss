@@ -78,11 +78,6 @@
         width: 100%;
         color: $subtleBg;
         margin: 0 1rem;
-
-        &:hover {
-            color: $spicy;
-            transition: fill 0.25s ease-in-out;
-        }
     }
 
     &__legal {
