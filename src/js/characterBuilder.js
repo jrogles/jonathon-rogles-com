@@ -1,6 +1,6 @@
 import anime from "animejs";
 
-export const CharacterBuilder = (function() {
+export default function CharacterBuilder() {
   //timeline vars
   let tl; //object
   let target; //string
@@ -19,7 +19,7 @@ export const CharacterBuilder = (function() {
     });
     introTl.add({
       targets: ".btn-intro",
-      translateY: "330%",
+      top: "80%",
     })
     .add({
       targets: ".cb-intro",
@@ -39,7 +39,6 @@ export const CharacterBuilder = (function() {
       targets: [".btn-cb"],
       opacity: [0,1],
       translateY: [20, 0],
-      //zIndex: [-999, 10],
       delay: anime.stagger(100),
       easing: "spring",
       begin: function() {
@@ -135,4 +134,4 @@ export const CharacterBuilder = (function() {
       tl.add({targets: layer+" [id*='bun']", opacity: [0,1], translateY: [-50,0],});
     }
   }
-}());
+}

@@ -1,4 +1,4 @@
-export const perspectiveShift = function() {
+export default function perspectiveShift() {
   const view = document.querySelector(".content"); //container
   const obj = document.querySelector(".cb-svg"); //object
 
@@ -29,4 +29,4 @@ export const perspectiveShift = function() {
     obj.style.transition = "all 150ms linear 0s";
   });
 
-}();
+}

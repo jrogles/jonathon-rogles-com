@@ -33,7 +33,7 @@
         font-size: 1rem;
         margin: 1rem 0 0 0;
 
-        @media (min-width: 480px) {
+        @media (min-width: 575px) {
             margin: 0.75rem 0 0.45rem 2rem;
         }
     }
@@ -50,7 +50,7 @@
     .logo--rd > svg {
         width: 150px;
 
-        @media (min-width:480px) {
+        @media (min-width:575px) {
             width: 200px;
         }
 
